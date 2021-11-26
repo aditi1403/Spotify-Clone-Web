@@ -1,0 +1,83 @@
+  
+.body_songNumber {
+    counter-reset: list-number;
+}
+
+.body_songNumber .songRow {
+    counter-increment: list-number;
+}
+
+.body_songNumber .songRow:before {
+    content: counter(list-number);
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.songRow {
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    content: counter(list-number);
+}
+
+.songRow:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.songRow_info {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.songRow_info > h1 {
+    font-size: 16px;
+    width: fit-content;
+}
+
+.songRow_info > p {
+    font-size: 14px;
+    padding-top: 3px;
+    margin-right: 27%;
+    color: #b3b3b3;
+    width: 20%;
+    float: left;
+}
+
+.songRow_album {
+    height: 50px;
+    width: 50px;
+}
+
+.songRow_albumName {
+    margin-top: -5px !important;
+    width: 20% !important;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    margin-left: -5%;
+    margin-right: 5% !important;
+}
+  
+.songRow_albumRelease {
+    width: fit-content !important;
+    padding: 0;
+    margin-top: -5px;
+    margin-left: -1.5%;
+    margin-right: 5.2% !important;
+}
+  
+.songRow_infoDuration {
+    width: fit-content;
+    margin-top: -3px !important;
+    margin-left: 10% !important;
+    align-items: center;
+    color: #b3b3b3;
+}
